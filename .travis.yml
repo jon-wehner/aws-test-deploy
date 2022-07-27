@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jonwehner/aws-test-deploy -f Dockerfile.dev ./Frontend/
+  - docker build -t jonwehner/aws-test-deploy -f Dockerfile.dev ./frontend/
 
 script:
   - docker run -e CI=true jonwehner/aws-test-deploy npm run test
