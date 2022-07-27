@@ -9,6 +9,6 @@ test('renders learn react link', () => {
 
 test('renders the changed test', () => {
   render(<App />);
-  const text = screen.getByText(/notchanged/i);
+  const text = screen.getByText(/not changed/i);
   expect(text).toBeInTheDocument();
 });
